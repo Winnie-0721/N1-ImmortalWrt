@@ -17,7 +17,7 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_REF: v25.12
+  REPO_REF: openwrt-25.12
   TZ: Asia/Shanghai
 
 jobs:
