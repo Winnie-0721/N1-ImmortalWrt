@@ -1,4 +1,4 @@
-name: Build ImmortalWrt-24.10.4 for N1
+name: Build ImmortalWrt-25.12 for N1
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ on:
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   REPO_URL: https://github.com/immortalwrt/immortalwrt
-  REPO_REF: v24.10.4
+  REPO_REF: v25.12
   TZ: Asia/Shanghai
 
 jobs:
