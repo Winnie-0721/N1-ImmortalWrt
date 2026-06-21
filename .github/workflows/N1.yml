@@ -76,6 +76,13 @@ jobs:
       uses: P3TERX/ssh2actions@main
       if: github.event.inputs.ssh == 'true'
 
+    - name: 缓存软件包
+      uses: actions/cache@v4
+      with:
+        path: openwrt/dl
+        key: openwrt-dl-${{ runner.os }}-${{ hashFiles('.config') }}
+        restore-keys: openwrt-dl-${{ runner.os }}-
+
     - name: 下载软件包
       working-directory: ./openwrt
       run: |
