@@ -93,7 +93,7 @@ jobs:
     - name: 打包ARM内核
       uses: unifreq/openwrt_packit@master
       env:
-        OPENWRT_ARMVIRT: openwrt/bin/targets/armsr/armv8/*rootfs.tar.gz
+        OPENWRT_ARMSR: openwrt/bin/targets/*/*/*rootfs.tar.gz
         OPENWRT_VER: ${{ env.REPO_REF }}
         KERNEL_REPO_URL: breakingbadboy/OpenWrt
         KERNEL_VERSION_NAME: 6.6.y
