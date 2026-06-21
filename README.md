@@ -5,7 +5,7 @@
 固件包含完整 IPv6 支持，以及下列 luci-app：<br>
 [luci-app-amlogic](https://github.com/ophub/luci-app-amlogic)：系统更新、文件传输、CPU 调频等<br>
 [luci-app-diskman](https://github.com/lisaac/luci-app-diskman): 磁盘管理<br>
-[luci-app-dockerman](https://github.com/lisaac/luci-app-dockerman)：docker 管理<br>
+[luci-app-podman](https://github.com/Zerogiven-OpenWRT-Packages/luci-app-podman)：podman 容器管理<br>
 [luci-app-hd-idle](https://github.com/adelolmo/hd-idle): 磁盘休眠<br>
 [luci-app-nikki](https://github.com/nikkinikki-org/OpenWrt-nikki)：科学上网<br>
 luci-app-samba4：存储共享<br>
