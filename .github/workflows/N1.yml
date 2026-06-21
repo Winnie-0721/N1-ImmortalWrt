@@ -67,6 +67,7 @@ jobs:
       run: |
         chmod +x $GITHUB_WORKSPACE/diy-2.sh
         $GITHUB_WORKSPACE/diy-2.sh
+        git clone --depth=1 https://github.com/Zerogiven-OpenWRT-Packages/luci-app-podman.git package/luci-app-podman
         rm -rf ./files ./.config
         mv "$GITHUB_WORKSPACE/files" ./files
         mv "$GITHUB_WORKSPACE/.config" ./.config 
