@@ -16,17 +16,3 @@ config zone
 	option forward 'ACCEPT'
 	option masq '1'
 
-config zone 'docker'
-	option input 'ACCEPT'
-	option output 'ACCEPT'
-	option forward 'REJECT'
-	option name 'docker'
-	list network 'docker'
-
-config forwarding
-	option src 'docker'
-	option dest 'wan'
-
-config forwarding
-	option src 'lan'
-	option dest 'docker'
