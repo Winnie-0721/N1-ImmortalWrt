@@ -83,7 +83,7 @@ config mixin 'mixin'
 	option rule_provider '0'
 	option mixin_file_content '0'
 	option ui_path 'ui'
-	option api_secret '831926'
+	option api_secret 'N1$K@9x2m'
 	option tcp_keep_alive_idle '600'
 	option tcp_keep_alive_interval '15'
 	list fake_ip_filters '+.lan'
@@ -144,7 +144,7 @@ config lan_access_control
 config authentication
 	option enabled '1'
 	option username 'nikki'
-	option password '831926'
+	option password 'N1$K@9x2m'
 
 config hosts
 	option enabled '0'

@@ -19,6 +19,14 @@ config zone
 config zone 'docker'
 	option input 'ACCEPT'
 	option output 'ACCEPT'
-	option forward 'ACCEPT'
+	option forward 'REJECT'
 	option name 'docker'
 	list network 'docker'
+
+config forwarding
+	option src 'docker'
+	option dest 'wan'
+
+config forwarding
+	option src 'lan'
+	option dest 'docker'

@@ -9,7 +9,7 @@ config dnsmasq
 	option expandhosts '1'
 	option min_cache_ttl '3600'
 	option use_stale_cache '3600'
-	option cachesize '0'
+	option cachesize '1000'
 	option nonegcache '1'
 	option authoritative '1'
 	option readethers '1'
