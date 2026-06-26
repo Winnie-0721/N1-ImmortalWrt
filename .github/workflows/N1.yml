@@ -54,23 +54,14 @@ jobs:
         git clone $REPO_URL -b $REPO_REF --single-branch --depth=1 openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
-    - name: 更新并安装feeds
+    - name: 自定义配置与 feeds
       working-directory: ./openwrt
       run: |
-        chmod +x $GITHUB_WORKSPACE/diy-1.sh
-        $GITHUB_WORKSPACE/diy-1.sh
-        ./scripts/feeds update -a
-        ./scripts/feeds install -a
-
-    - name: 加载自定义配置
-      working-directory: ./openwrt
-      run: |
-        chmod +x $GITHUB_WORKSPACE/diy-2.sh
-        $GITHUB_WORKSPACE/diy-2.sh
-        git clone --depth=1 https://github.com/Zerogiven-OpenWRT-Packages/luci-app-podman.git package/luci-app-podman
+        chmod +x $GITHUB_WORKSPACE/diy.sh
+        $GITHUB_WORKSPACE/diy.sh
         rm -rf ./files ./.config
         mv "$GITHUB_WORKSPACE/files" ./files
-        mv "$GITHUB_WORKSPACE/.config" ./.config 
+        mv "$GITHUB_WORKSPACE/.config" ./.config
         
     - name: SSH连接到Actions
       uses: P3TERX/ssh2actions@main
