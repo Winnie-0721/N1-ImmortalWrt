@@ -83,7 +83,7 @@ config mixin 'mixin'
 	option rule_provider '0'
 	option mixin_file_content '0'
 	option ui_path 'ui'
-	option api_secret 'N1$K@9x2m'
+	option api_secret 'Ak$7mP!2xN'
 	option tcp_keep_alive_idle '600'
 	option tcp_keep_alive_interval '15'
 	list fake_ip_filters '+.lan'
@@ -130,11 +130,6 @@ config router_access_control
 	list cgroup 'zerotier'
 	option proxy '0'
 	option dns '0'
-
-config router_access_control
-	option enabled '1'
-	option proxy '1'
-	option dns '1'
 
 config lan_access_control
 	option enabled '1'
