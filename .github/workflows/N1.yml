@@ -88,7 +88,11 @@ jobs:
         echo -e "可使用的核心数：$(nproc)"
         make -j$(nproc) || make -j$(($(nproc) / 2)) || make -j1 V=s
         echo "检查编译产物..."
-        ls -lh bin/targets/armsr/armv8/*rootfs* || { echo "错误：rootfs 未生成！"; exit 1; }
+        echo "列出 bin/targets/ 目录内容："
+        find bin/targets/ -name "*rootfs*" -type f || true
+        echo "列出 bin/targets/armsr/armv8/ 目录内容："
+        ls -lh bin/targets/armsr/armv8/ || true
+        test -n "$(find bin/targets/ -name "*rootfs*" -type f)" || { echo "错误：rootfs 未生成！"; exit 1; }
         
     - name: 打包ARM内核
       uses: unifreq/openwrt_packit@master
