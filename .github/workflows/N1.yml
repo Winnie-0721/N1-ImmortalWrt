@@ -88,7 +88,7 @@ jobs:
         openwrt_board: s905d
         kernel_repo: ophub/kernel
         kernel_usage: flippy
-        openwrt_kernel: 6.6.y
+        openwrt_kernel: 6.12.y
         builder_name: Winnie-0721
         
     - name: 发布固件
