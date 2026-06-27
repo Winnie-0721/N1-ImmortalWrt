@@ -95,7 +95,7 @@ jobs:
       uses: softprops/action-gh-release@master
       with:
         tag_name: ImmortalWrt_${{ env.PACKAGED_OUTPUTDATE }}
-        files: ${{ env.PACKAGED_OUTPUTPATH }}/*.img.xz
+        files: ${{ env.PACKAGED_OUTPUTPATH }}/*.img.gz
         body: |
           首次使用建议全新刷写
           * 基本信息
