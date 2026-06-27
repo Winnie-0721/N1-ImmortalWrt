@@ -89,7 +89,6 @@ jobs:
         kernel_repo: ophub/kernel
         kernel_usage: flippy
         openwrt_kernel: 6.6.y
-        openwrt_ip: 192.168.1.2
         builder_name: Winnie-0721
         
     - name: 发布固件
