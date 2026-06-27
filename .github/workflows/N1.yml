@@ -111,7 +111,7 @@ jobs:
         token: ${{ env.GITHUB_TOKEN }}
 
     - name: 删除的旧固件
-      uses: dev-drprasad/delete-older-releases@master
+      uses: dev-drprasad/delete-older-releases@v0.3.4
       with:
         keep_latest: 2
         delete_tags : true
