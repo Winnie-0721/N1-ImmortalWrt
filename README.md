@@ -12,4 +12,4 @@ luci-app-samba4：存储共享<br>
 luci-app-ttyd: 终端<br>
 ***
 # 致谢
-本项目基于 [ImmortalWrt-25.12](https://github.com/immortalwrt/immortalwrt/tree/openwrt-25.12) 源码编译，使用 [ophub](https://github.com/ophub/amlogic-s9xxx-openwrt) 的打包工具和[内核](https://github.com/ophub/kernel)打包成完整固件，基于 [nantayo](https://github.com/nantayo/N1-OpenWrt) 的 N1-OpenWrt 项目基础上开发，感谢开发者们的无私分享。
+本项目基于 [ImmortalWrt-25.12](https://github.com/immortalwrt/immortalwrt/tree/openwrt-25.12) 源码编译，使用 [ophub](https://github.com/ophub/amlogic-s9xxx-openwrt) 的打包工具和[内核](https://github.com/ophub/kernel)打包成完整固件，基于 [N1-OpenWrt](https://github.com/nantayo/N1-OpenWrt) 项目基础上开发，感谢开发者们的无私分享。
